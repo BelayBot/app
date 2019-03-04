@@ -51,18 +51,6 @@ class SimpleChatBot {
 
         this.inputText.addEventListener('keyup', event => {
 
-          // const userAskButton = document.querySelector('.submit-request-button').addEventListener('click', function(){
-          //   // document.querySelector('#input-text-id').keyup();
-          //   var keyEvent = new KeyboardEvent("keydown", {key : "13", char : "13"});
-          //
-          //   document.dispatchEvent(keyEvent);
-          // })
-
-
-
-
-
-
             let text = event.target.value
             let textNoT = this.replaceSpecialChar( text )
 
