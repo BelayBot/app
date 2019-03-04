@@ -37,15 +37,30 @@ class SimpleChatBot {
         return false
     }
 
-    //
-    // document.querySelector('.submit-request-button').addEventListener('click', function(){
-    //   Main();
-    // });
-
 
     Main(){
 
+      const userAskButton = document.querySelector('.submit-request-button').addEventListener('click', function(){
+        var textArea = document.querySelector('.chatbot-request-field');
+        var keyboardEvent = new KeyboardEvent('keyup', {
+            key: 'Enter',
+            view: window,
+        });
+        textArea.dispatchEvent(keyboardEvent);
+      });
+
         this.inputText.addEventListener('keyup', event => {
+
+          // const userAskButton = document.querySelector('.submit-request-button').addEventListener('click', function(){
+          //   // document.querySelector('#input-text-id').keyup();
+          //   var keyEvent = new KeyboardEvent("keydown", {key : "13", char : "13"});
+          //
+          //   document.dispatchEvent(keyEvent);
+          // })
+
+
+
+
 
 
             let text = event.target.value
@@ -54,7 +69,7 @@ class SimpleChatBot {
             this.searchQuestions( textNoT )
             this.labelInputTextFn()
 
-                if ( event.key == 'Enter') {
+                if ( event.key == 'Enter' || userAskButton) {
 
                     if ( !text.length ){
 
