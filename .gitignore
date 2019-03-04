@@ -1,0 +1,12 @@
+_site
+.sass-cache
+.jekyll-metadata
+*.log
+/tmp/
+*~
+.project
+.DS_Store
+bin
+.bundle
+vendor
+.asset-cache
