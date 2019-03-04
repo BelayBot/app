@@ -1,0 +1,235 @@
+html, *, *:before, *:after {
+  box-sizing: border-box;
+}
+html, body {
+  font: 1em/1.5 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  color: #1B1B1B;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Layout */
+.view-content {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+
+/* Typography */
+.text-bold {
+  font-weight: bold;
+}
+
+
+/* App Info */
+.app-info {
+  background: #fff;
+  position: absolute;
+  margin: 0;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+}
+.app-info .padding-top {
+  padding-top: 15px;
+}
+
+
+/* Header */
+.header {
+  background: #FFC04E;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  -webkit-align-items: center;
+          align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+.logo-container {
+  padding: 10px 20px;
+  vertical-align: text-top;
+}
+.logo-belaybot {
+  font: 1.2em/1 'Luckiest Guy', cursive;
+  display: inline-block;
+}
+.logo-beta-text {
+  display: inline-block;
+  color: #E36A25;
+  font-size: 0.7em;
+}
+.navegation {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+.navegation .navegation-item {
+  background: #1B1B1B;
+  color: #fff;
+  font-size: 0.8em;
+  margin: 0;
+  text-decoration: none;
+  padding: 5px 9px;
+  border-radius: 20px;
+  transition:all 0.3s ease;
+}
+
+/* Chatbot Response Container  */
+.chatbot-response-container {
+  -webkit-flex: 1 1 0;
+          flex: 1 1 0;
+  -webkit-order: 2;
+          order: 2;
+  position: relative;
+  z-index: 1;
+}
+.initial-conversation-tips {
+  display: inline-table;
+}
+#input-text-register{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  transition: background .3s ease-out .1s;
+  z-index: 100;
+  padding: 0 20px;
+}
+.bot {
+  margin: 10px 0 0 30px;
+  padding: 5px 10px;
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 16px 0 rgba(212,212,212,0.50);
+  border-radius: 8px 8px 8px 0;
+  position: relative;
+  min-height: 35px;
+}
+.user-question {
+  margin: 10px 0;
+  height: 40px;
+  display: block;
+  position: relative;
+}
+.me {
+  background: #232323;
+  color: #fff;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 16px 0 rgba(212,212,212,0.50);
+  -webkit-border-radius: 8px;
+  -webkit-border-bottom-right-radius: 0;
+     -moz-border-radius: 8px;
+     -moz-border-radius-bottomright: 0;
+          border-radius: 8px;
+   border-bottom-right-radius: 0;
+   position: absolute;
+   right: 0;
+}
+
+
+  /*Chatbot request Container*/
+.chatbot-request-container {
+  background: #efefef;
+  min-height: 62px;
+  padding: 10px 0;
+  -webkit-order: 3;
+          order: 3;
+  position: relative;
+  -webkit-flex: none;
+          flex: none;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.chatbot-request-field {
+  background: #fff;
+  padding: 10px 0 0 20px;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+.chatbot-request-container input {
+  background: #fff;
+  border: 0;
+  width: 80%;
+  font-size: 1em;
+  padding: 10px 15px;
+  outline: none;
+}
+.chatbot-request-hints {
+  color: #B3B9C7;
+  font-size: 0.8em;
+  padding: 5px 0 0 20px;
+  display: block;
+  cursor: pointer;
+}
+.submit-request-button {
+  background: 0;
+  border: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* Icons */
+.icons {
+  background: url("../images/icons.png") no-repeat;
+  background: url("../images/icons.svg") no-repeat;
+  position: relative;
+  display: inline-block;
+}
+.logo-icon {
+  background-size: 100%;
+  background-position: 0 0;
+  vertical-align: bottom;
+  width: 50px;
+  height: 30px;
+}
+.icon-submit {
+  background-position: 10px -64px;
+  background-size: 100%;
+  width: 40px;
+  height: 32px;
+}
+.icon-bot-in-chat {
+  background-position: 10px -28px;
+  background-size: 100%;
+  width: 40px;
+  height: 35px;
+  margin: 0 -20px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.icon-bot-button-close {
+  background-position: 7px -100px;
+  background-size: 100%;
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.icon-bot-button-close::after {
+  content: 'Fechar';
+  font-size: 0.5em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  color: #141414;
+}

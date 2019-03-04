@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BelayBot</title>
+  <meta name="author" content="Avelar Fortunato"
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/application.css">
+</head>
+  <body>
+    <div class="view-content">
+      <header class="header">
+        <div class="logo-container">
+          <div class="icons logo-icon"></div>
+          <div class="logo-belaybot">
+            BelayBot
+          </div>
+          <div class="logo-beta-text">
+            (Beta)
+          </div>
+        </div>
+        <nav class="navegation">
+          <a class="navegation-item navegation-info-open" href="#">?</a>
+        </nav>
+      </header>
+
+      <section id="app" class="section chatbot-response-container">
+        <div id="input-text-register">
+          <p class="initial-conversation-tips">
+            <span class="icons icon-bot-in-chat"></span>
+            <span class="bot">👋 Oi, tudo bem? Eu me chamo BelayBot, seu personal belayer na internet. Você pode fazer perguntas como: o que é reglet, quem é Alex Honnold, onde escalar em SP, ou vai chover?</span>
+          </p>
+        </div>
+      </section>
+
+      <footer class="chatbot-request-container">
+        <div class="chatbot-request">
+          <input id="input-text-id" class="chatbot-request-field" type="text" placeholder="Digite aqui..." autocomplete="off">
+          <button id="submit-request-button" class="submit-request-button icons icon-submit"></button>
+        </div>
+        <label for="input-text-id" class="chatbot-request-hints"></label>
+      </footer>
+    </div>
+
+    <div class="app-info">
+      <a href="#" class="navegation-info-close icons icon-bot-button-close"></a>
+      <p class="padding-top">
+        O BelayBot<sup>(beta)</sup> é um chatbot que responde perguntas sobre escalada. Ele está em desenvolvimento de uma curadoria com conteúdos de esclada e respostas claras e objetivas, afinal de contas ninguém pretende se enrrolar quando está no crux da via não é?
+      </p>
+      <p>
+        <span class="text-bold">Faltou alguma pergunta? Quer contribuir? </span><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXndwzUbQfaUgAjUmO0HJVFkgwgACGPAWYQp-4zqvCvkIjUw/viewform?usp=sf_link" target="_blank">Pode escrever aqui</a>.
+      </p>
+      <p>
+        Lista de pergunta disponíveis (em breve)
+      </p>
+      <p>
+        WebApp desenvolvido por:
+        <br>
+        <a href="mailto:fortunato.avelar@gmail.com">Avelar Fortunato (e-mail)</a>.
+      </p>
+      <p class="padding-top">
+        <div class="icons logo-icon"></div>
+        <div class="logo-belaybot">
+          👋 BelayBot
+        </div>
+        <div class="logo-beta-text">
+          (Beta)
+        </div>
+      </p>
+    </div>
+
+    <script src="scripts/robochat.js"></script>
+    <script src="scripts/questions.js"></script>
+    <script src="scripts/application.js"></script>
+  </body>
+</html>

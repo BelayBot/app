@@ -1,0 +1,223 @@
+html, *, *:before, *:after {
+  box-sizing: border-box;
+}
+html, body {
+  font: 1em/1.5 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  color: #1B1B1B;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Helpers */
+::selection { background: #ddcb8c; }
+::-moz-selection { background: #ddcb8c; }
+
+/* Layout */
+.flex-container {
+  display: flex;
+}
+.flex-item {
+  flex-grow: 1;
+  width: 50%;
+}
+
+
+.header {
+  background: url("../images/bg-header.png");
+  background: url("../images/bg-header.svg");
+  width: 100%;
+  height: 200px;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.logo-container {
+  padding: 20px;
+  vertical-align: text-top;
+}
+.logo-belaybot {
+  font: 2em/1 'Luckiest Guy', cursive;
+  display: inline-block;
+}
+.logo-beta-text {
+  display: inline-block;
+  color: #E36A25;
+  font-size: 0.7em;
+}
+.navegation {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.navegation .navegation-item {
+  font-size: 0.8em;
+  color: #1B1B1B;
+  margin: 0;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition:all 0.3s ease;
+}
+.navegation .navegation-item:hover {
+  background: #1B1B1B;
+  color: #fff;
+}
+
+
+
+
+.section {
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+.short-explain-text {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #E97E2E;
+  font-weight: bold;
+  margin: 40px 0;
+}
+.headline {
+  font: 4em/1 'Luckiest Guy', cursive;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.subheadline {
+  margin-bottom: 40px;
+}
+
+/* Cense */
+.flowers {
+  background: url("../images/flowers.png") no-repeat bottom right;
+  background: url("../images/flowers.svg") no-repeat bottom right;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 400px;
+  z-index: -1;
+}
+
+/* Button */
+.btn {
+  padding: 10px 30px;
+  color: #E97E2E;
+  border: 2px solid #E97E2E;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*Chat*/
+.chatbot-main {
+  width: 65%;
+  height: 450px;
+  position: relative;
+  margin: 0 auto;
+  background: #FBFCFF;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #CCD0DC;
+  overflow: hidden;
+  box-shadow: 4px 4px 12px 0 rgba(64,61,61,0.50);
+}
+.bot {
+  margin: 10px 0 0 30px;
+  padding: 5px 10px;
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 16px 0 rgba(212,212,212,0.50);
+  border-radius: 8px 8px 8px 0;
+  position: relative;
+  min-height: 35px;
+}
+.user-question {
+  margin: 10px 0;
+  height: 40px;
+  display: block;
+  position: relative;
+}
+.me {
+  background: #232323;
+  color: #fff;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 16px 0 rgba(212,212,212,0.50);
+  -webkit-border-radius: 8px;
+  -webkit-border-bottom-right-radius: 0;
+     -moz-border-radius: 8px;
+     -moz-border-radius-bottomright: 0;
+          border-radius: 8px;
+   border-bottom-right-radius: 0;
+   position: absolute;
+   right: 0;
+}
+.chatbot-ask-container {
+  background: #F6F8FF;
+  border-top: 1px solid #B3B9C7;
+  padding: 10px 0 30px 20px;
+  margin: 0 0 0 -20px;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+}
+.chatbot-ask-container input {
+  background: #F6F8FF;
+  border: 0;
+  width: 80%;
+  font-size: 1.1em;
+  padding: 5px 0;
+  outline: none;
+}
+.chatbot-ask-hints {
+  color: #B3B9C7;
+  font-size: 0.8em;
+  padding: 5px 0;
+  display: block;
+  cursor: pointer;
+}
+.submit-ask-button {
+  background: 0;
+  border: 0;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+
+/* Icons */
+.icons {
+  background: url("../images/icons.png") no-repeat;
+  background: url("../images/icons.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: inline-block;
+}
+.logo-icon {
+  background-position: 0 0;
+  vertical-align: bottom;
+  width: 60px;
+  height: 40px;
+}
+.icon-submit {
+  background-position: 10px -64px;
+  background-size: 100%;
+  width: 40px;
+}
+.icon-bot-in-chat {
+  background-position: 10px -28px;
+  background-size: 100%;
+  width: 40px;
+  height: 35px;
+  margin: 0 -20px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
