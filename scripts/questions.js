@@ -47,4 +47,20 @@ const myQuestions = [
         req:`Escalada é um esporte olímpico?`,
         res:`Ainda não mas vai estar nas olimpíadas de 2020`
     },
+    {
+        req:`Filmes de escalada?`,
+        res:`Wow adoro filmes, algumas dicas são \<a href="https://www.netflix.com/br/title/80084836">Valley Uprising</a>\ uma história divertida cronológica do início da escalada no Yosemit Valley. \<a href="https://www.dawnwall-film.com/">The Dawn Wall</a>\ história emocionante com Tommy Caldwell. \<a href="https://www.nationalgeographic.com/films/free-solo/">Free Solo, a National Geographic</a>\ Com Alex Honnold vencedor do Oscar em 2019.`
+    },
+    {
+        req:`Livros de escalada?`,
+        res:`Amo ler, alguns livros que indico são:...`
+    },
+    {
+        req:`Onde escalar em SP, São Paulo`,
+        res:`90 Graus, Casa de Pedra, Fabrica...`
+    },
+    {
+        req:`Quais os tipos de escalada, estilos, modalidades`,
+        res:`Boulder, Tradicional, ...`
+    },
 ]
